@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Made nodes rotatable 
 - Moved depends.txt to mod.conf to fix deprecation warnings
 - Added aliases
+- Added moreblocks support (optional)
 
 ## [1.0.0] - 2017-10-15
 

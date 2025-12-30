@@ -54,5 +54,22 @@ core.register_node("bedrock:deepstone", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
+if core.get_modpath("moreblocks") then
+	stairsplus:register_all("bedrock", "deepstone", "bedrock:deepstone", {
+		description = "Deepstone",
+		tiles = {"bedrock_deepstone.png"},
+		groups = {cracky = 1},
+		sounds = default.node_sound_stone_defaults(),
+	})
+
+	stairsplus:register_all("bedrock", "bedrock", "bedrock:bedrock", {
+		description = "Bedrock",
+		tiles = {"bedrock_bedrock.png"},
+		drop = "",
+		groups = {unbreakable = 1},
+		sounds = default.node_sound_stone_defaults(),
+	})
+end
+
 core.register_alias("bedrock", "bedrock:bedrock")
 core.register_alias("deepstone", "bedrock:deepstone")
